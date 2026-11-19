@@ -1,60 +1,102 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worlds & Stories | Between the Pages</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <h1>Between the Pages</h1>
-        <p>A Digital Archive of Fictional Worlds</p>
+    <header class="site-header">
+        <a class="logo" href="index.html">BETWEEN THE PAGES</a>
         <nav>
             <a href="index.html">The Archive</a>
-            <a href="worlds-stories.html">Worlds & Stories</a>
+            <a class="active" href="worlds-stories.html">Worlds &amp; Stories</a>
             <a href="readers-room.html">The Reader's Room</a>
         </nav>
     </header>
 
-<main>
-    <section>
-        <h2>Worlds & Stories</h2>
-        <p>Books can take us to places that feel real, even when they only exist on the page. Browse a few genres and settings below.</p>
-    </section>
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">THE COLLECTION / 001</p>
+            <h1>Worlds &amp; <em>Stories</em></h1>
+            <p>Explore different genres, settings, and atmospheres. Each story is an invitation to somewhere new.</p>
+        </section>
 
-    <section>
-        <h2>Gallery</h2>
-        <p>Add six images that connect to books, genres, or fictional settings. Replace each image placeholder with your own image.</p>
-        <div class="gallery">
-            <div class="gallery-item"><img src="images/image-1.jpg" alt="Add a description of your first image">
-                <p>Fantasy worlds</p></div>
-            <div class="gallery-item"><img src="images/image-2.jpg" alt="Add a description of your second image">
-                <p>Magical settings</p></div>
-            <div class="gallery-item"><img src="images/image-3.jpg" alt="Add a description of your third image">
-                <p>Gothic stories</p></div>
-            <div class="gallery-item"><img src="images/image-4.jpg" alt="Add a description of your fourth image">
-                <p>Mysterious places</p></div>
-            <div class="gallery-item"><img src="images/image-5.jpg" alt="Add a description of your fifth image">
-                <p>Romance</p></div>
-            <div class="gallery-item"><img src="images/image-6.jpg" alt="Add a description of your sixth image">
-                <p>Hidden worlds</p></div>
-        </div>
-    </section>
+        <section class="gallery-section section-wrap">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A VISUAL INDEX</p>
+                    <h2>Stories to step into.</h2>
+                </div>
+                <p class="small-note">A collection of books and imagined places.</p>
+            </div>
 
-    <section>
-        <h2>What kind of story are you in the mood for?</h2>
-        <p>Click the button to get a simple reading suggestion.</p>
-        <button onclick="showSuggestion()">Find a story mood</button>
-        <p id="suggestion">Your suggestion will appear here.</p>
-    </section>
+            <div class="gallery-grid">
+                <article class="gallery-card">
+                    <img src="images/gallery-1.jpg" alt="Replace with an atmospheric image inspired by a fantasy world">
+                    <div><span>FANTASY</span><h3>Worlds of wonder</h3><p>Magic, folklore, and the unknown.</p></div>
+                </article>
+                <article class="gallery-card">
+                    <img src="images/gallery-2.jpg" alt="Replace with an image inspired by a mysterious setting">
+                    <div><span>MYSTERY</span><h3>Shadows &amp; secrets</h3><p>Every detail holds a clue.</p></div>
+                </article>
+                <article class="gallery-card">
+                    <img src="images/gallery-3.jpg" alt="Replace with an image inspired by a romantic story">
+                    <div><span>ROMANCE</span><h3>Unwritten feelings</h3><p>Stories about connection and change.</p></div>
+                </article>
+                <article class="gallery-card">
+                    <img src="images/gallery-4.jpg" alt="Replace with an image inspired by a gothic story">
+                    <div><span>GOTHIC FICTION</span><h3>Beautiful darkness</h3><p>Old places and haunting stories.</p></div>
+                </article>
+                <article class="gallery-card">
+                    <img src="images/gallery-5.jpg" alt="Replace with an image inspired by an adventure story">
+                    <div><span>ADVENTURE</span><h3>Somewhere unknown</h3><p>Journeys that lead to discovery.</p></div>
+                </article>
+                <article class="gallery-card">
+                    <img src="images/gallery-6.jpg" alt="Replace with an image inspired by a dreamlike fictional world">
+                    <div><span>FICTION</span><h3>Between realities</h3><p>Stories that blur the familiar.</p></div>
+                </article>
+            </div>
+            <p class="image-reminder">Image note: Replace these six image files with your selected photographs or properly credited images. Keep the filenames the same, or update the image paths in this page.</p>
+        </section>
 
-    <section>
-        <h2>Frequently Asked Questions</h2>
-        <h3>What is Between the Pages?</h3>
-        <p>A website for discovering books and exploring the worlds found in fiction.</p>
-        <h3>Are all the books from one genre?</h3>
-        <p>No. The website includes different genres, so readers can explore a mix of stories.</p>
-    </section>
-</main>
+        <section class="quiz-section">
+            <div class="quiz-inner">
+                <p class="eyebrow">A SMALL READING GUIDE</p>
+                <h2>What kind of world are you looking for?</h2>
+                <p>Choose the atmosphere that sounds best to you.</p>
+                <div class="quiz-options">
+                    <button class="choice" data-result="fantasy">A magical escape</button>
+                    <button class="choice" data-result="mystery">A puzzle to solve</button>
+                    <button class="choice" data-result="romance">A story to feel</button>
+                </div>
+                <p id="quiz-result" class="quiz-result">Your reading suggestion will appear here.</p>
+            </div>
+        </section>
+
+        <section class="faq section-wrap">
+            <p class="eyebrow">FROM THE READING DESK</p>
+            <h2>Frequently asked questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is Between the Pages? <span>+</span></button>
+                <p class="faq-answer">It is a digital archive for discovering books, genres, and the fictional worlds that make stories memorable.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do I need to read every featured book? <span>+</span></button>
+                <p class="faq-answer">Not at all. The collection is here to help you explore and find stories that interest you.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I explore more than one genre? <span>+</span></button>
+                <p class="faq-answer">Of course. The archive includes different genres, and readers are welcome to explore them all.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>BETWEEN THE PAGES</p><p>A DIGITAL ARCHIVE OF FICTIONAL WORLDS</p>
+        <a href="mailto:YOUR-EMAIL@example.com">CONTACT</a><small>© 2026 BETWEEN THE PAGES</small>
+    </footer>
+</body>
+</html>
